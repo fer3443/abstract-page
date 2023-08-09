@@ -25,7 +25,7 @@ header {
 }
 nav {
     width: 100%;
-    height: 70px;
+    height: 80px;
     background-color: #000;
     border-radius: 10px 10px 0 0;
     display: flex;
@@ -46,6 +46,9 @@ nav a {
     text-decoration: none;
     height: 100%;
 }
+nav a:hover {
+    color: #dadbf1;
+}
 nav span {
     color: #fff;
     margin: 0 5px;
@@ -53,9 +56,10 @@ nav span {
 nav .links .btnRequest, .btnLogin {
     border-radius: 5px;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-left: 10px;
-    padding: 7px 10px;
+    padding: 10px 13px;
+    cursor: pointer;
 }
 nav .links .btnRequest {
     background-color: #000;
@@ -64,6 +68,12 @@ nav .links .btnRequest {
 nav .links .btnLogin {
     background-color: #4C5FD5;
     border: none;
+    transition: all 0.2s ease-in-out;
+}
+nav .links .btnLogin:hover {
+    background-color: #dadbf1;
+    color: #000;
+    transition: all 0.2s ease-in-out;
 }
 section .title {
     background-color: #dadbf1;
@@ -71,7 +81,7 @@ section .title {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    height: 300px;
 }
 section h2 {
     font-size: 4rem;
@@ -92,10 +102,88 @@ section h2 {
     border-radius: 5px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
+.inputSearch input:focus {
+    outline-color: rgba(0, 0, 255, 0.521);
+}
 .inputSearch .btnArrow {
     position: absolute;
     right: 10px;
     background-color: transparent;
     border: none;
     color: #dadbf1;
+}
+.abstractGrid {
+    height: 700px;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    gap: 50px;
+    grid-template-columns: auto auto;
+    padding: 3rem;
+}
+.abstractBox img {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+}
+.abstractBox {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 450px;
+    height: auto;
+}
+.boxBody h4 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.boxBody p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.boxBody a {
+    text-align: center;
+    text-decoration: none;
+}
+.boxBody a:hover {
+    border-bottom: 1px solid blue;
+}
+footer {
+    background-color: #000;
+    border-radius: 0 0 10px 10px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+    padding: 3rem;
+}
+.abstractBoxFooter {
+    display: flex;
+    flex-direction: column;
+}
+.abstractBoxFooter h5 {
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+.abstractBoxFooter a {
+    position: relative;
+    font-size: 0.9rem;
+    color: #fff;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.abstractBoxFooter a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    background: #fff;
+    height: 1px;
+    width: 0;
+    transition: 0.3s;
+}
+.abstractBoxFooter a:hover::after {
+    width: 90%;
 }
