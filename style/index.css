@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #e9e9e9;
+    display: grid;
+    place-items: center;
+    padding: 2.5rem;
+}
+main {
+    border-radius: 10px;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+header {
+    background-color: #dadbf1;
+    border-radius: 10px 10px 0 0;
+}
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+nav .logo {
+    margin-right: 5px;
+}
+nav .links {
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    height: 100%;
+}
+nav span {
+    color: #fff;
+    margin: 0 5px;
+}
+nav .links .btnRequest, .btnLogin {
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 10px;
+    padding: 7px 10px;
+}
+nav .links .btnRequest {
+    background-color: #000;
+    border: 1px solid #fff;
+}
+nav .links .btnLogin {
+    background-color: #4C5FD5;
+    border: none;
+}
+section .title {
+    background-color: #dadbf1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+section h2 {
+    font-size: 4rem;
+    font-weight: 400;
+}
+.inputSearch {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.inputSearch input {
+    width: 580px;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #dadbf1;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+.inputSearch .btnArrow {
+    position: absolute;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: #dadbf1;
+}
